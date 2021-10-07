@@ -1,7 +1,7 @@
 # network-troubleshooting
 a quick reference of things to try when troubleshooting networks
 
-0. interface troubleshooting
+## 0. interface troubleshooting
 ```
 ip -h netconf # provide local network config
 ip addr show # provide physical and local network information
@@ -13,7 +13,7 @@ ip addr show dev <eno0(physical)/virbr(logical)>
 ..
 ```
 
-1. dns server troubleshooting
+## 1. dns server troubleshooting
 
 a) default configuration
 ```
@@ -34,7 +34,7 @@ nslookup -type=any google.com
 ```
 
 
-2. router troubleshooting
+## 2. router troubleshooting
 
 a) find router ip
 ```
@@ -53,13 +53,13 @@ hops = routers
 traceroute -4 m2-ess-vm85.mip.storage.hpecorp.net # note: -4 means ipv4
 traceroute -4 google.com # hops to the internet
 
-3. can we reach port ?
+## 3. can we reach port ?
 ```
 telnet <ip> <port> # for tcp
 nc -z -v -u [hostname/IP address] [port number] # for udp
 ```
 
-4. general info 
+## 4. general info 
 
 ```
 cat /etc/hosts 

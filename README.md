@@ -19,8 +19,7 @@ a) default configuration
 ```
 cat /etc/resolv.conf | grep "nameserver"
 ```
-nameserver 10.157.0.13
-nameserver 10.157.0.53
+Server:		127.0.0.53
 
 b) query dns to verify
 ```
@@ -29,7 +28,7 @@ dig m2-ess-vm85.mip.storage.hpecorp.net
 
 c) fetch dns records for a given domain name or ip addr
 ```
-nslookup -type=any m2-ess-vm84
+nslookup -type=any lion10.com
 nslookup -type=any google.com
 ```
 

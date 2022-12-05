@@ -68,3 +68,9 @@ cat /etc/hostname
 hostname
 hostname -f
 ```
+
+
+processes listening on port
+```bash
+lsof -i :53
+```

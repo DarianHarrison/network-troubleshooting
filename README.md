@@ -54,7 +54,7 @@ traceroute -4 google.com # hops to the internet
 
 ## 3. can we reach port ?
 ```bash
-telnet <ip> <port> # for tcp
+nc -zv subscription.rhsm.redhat.com 443 # for tcp
 nc -z -v -u [hostname/IP address] [port number] # for udp
 ```
 
